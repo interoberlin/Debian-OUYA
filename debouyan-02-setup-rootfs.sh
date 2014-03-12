@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cat <<END > /etc/apt/sources.list
-deb http://ftp.debian.org/debian/ wheezy main contrib non-free
-deb-src http://ftp.debian.org/debian/ wheezy main contrib non-free
+deb http://debian.inf.tu-dresden.de/debian/ wheezy main contrib non-free
+deb-src http://debian.inf.tu-dresden.de/debian/ wheezy main contrib non-free
 END
 
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin

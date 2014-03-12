@@ -1,0 +1,643 @@
+Bootloader AVP Init
+**********Aos DebugSemiHosting Initialized*******
+---------------------------------------------------
+NVRM Initialized shmoo database
+NVRM CLOCKS: PLLX0:      700000 Khz
+NVRM CLOCKS: PLLM0:      800000 Khz
+NVRM CLOCKS: PLLC0:      600000 Khz
+NVRM CLOCKS: PLLP0:      408000 Khz
+NVRM CLOCKS: PLLA0:      11289 Khz
+NVRM CLOCKS: CPU:        700000 Khz
+NVRM CLOCKS: AVP:        102000 Khz
+NVRM CLOCKS: System Bus: 102000 Khz
+NVRM CLOCKS: Memory Controller: 200000
+NVRM CLOCKS: External Memory Controller: 400000
+Fake BoardInfo: 0x0c5b:0x0b01:0x04:0x43:0x03
+ADJUSTED CLOCKS:
+MC clock is set to 200000 KHz
+EMC clock is set to 400000 KHz (DDR clock is at 400000 KHz)
+PLLX0 clock is set to 700000 KHz
+PLLC0 clock is set to 600000 KHz
+CPU clock is set to 700000 KHz
+System and AVP clock is set to 102000 KHz
+GraphicsHost clock is set to 163200 KHz
+3D clock is set to 133333 KHz
+2D clock is set to 133333 KHz
+Epp clock is set to 133333 KHz
+Mpe clock is set to 133333 KHz
+Vde clock is set to 272000 KHz
+Pinmux changes applied in kernel way
+Bootloader Start at:1257 ms
+
+[bootloader] (built on Apr 16 2013, 16:46:06)
+Initializing Display
+Invalidate-only cache maint not supported in NvOs
+Platform Pre Boot configuration...
+SocCpuMaxKHz = 1000000
+SocCpuMinKHz = 32
+PLLX0 FreqKHz = 700000
+Checking for android ota recovery 
+Key driver not found.. Booting OS
+Cold-booting Linux
+Platform Pre OS Boot configuration...
+The proc BoardInfo: 0x0c5b:0x0b01:0x04:0x43:0x03
+tegraid=30.1.3.0.0 mem=1022M@2048M commchip_id=0 androidboot.serialno=015d483b63
+60021b androidboot.commchip_id=0 video=tegrafb no_console_suspend=1 console=ttyS
+0,115200n8 debug_uartport=lsport,3 usbcore.old_scheme_first=1 lp0_vec=8192@0xbdd
+f9000 tegra_fbmem=8302080@0xacc23000 core_edp_mv=1300 audio_codec=wm8903 board_i
+nfo=c5b:b01:4:43:3 tegraboot=sdmmc gpt gpt_sector=15073279 android.kerneltype=no
+rmal
+Jumping to kernel at:2180 ms
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.1.10-g7b239160 (build@albox) (gcc version 4.6.x-google 20120106 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Feb 6 15:26:18 PST 2014
+[    0.000000] CPU: ARMv7 Processor [412fc099] revision 9 (ARMv7), cr=10c5387d
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: cardhu
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Ignoring unrecognised tag 0x41000801
+[    0.000000] Found tegra_fbmem: 007eae00@acc23000
+[    0.000000] Tegra reserved memory:
+[    0.000000] LP0:                    bddf9000 - bddfafff
+[    0.000000] Bootloader framebuffer: acc23000 - ad40dfff
+[    0.000000] Framebuffer:            bec00000 - bf4fffff
+[    0.000000] 2nd Framebuffer:        bf500000 - bfdfffff
+[    0.000000] Carveout:               00000000 - 00000000
+[    0.000000] Vpr:                    00000000 - 00000000
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] fuse_speedo_calib: ATE prog ver 3.8
+[    0.000000] Tegra3: CPU Speedo ID 5, Soc Speedo ID 2
+[    0.000000] Tegra Revision: A03 SKU: 0x80 CPU Process: 4 Core Process: 0
+[    0.000000] tegra: PLLP fixed rate: 408000000
+[    0.000000] Lowering sbus maximum rate from 378000000 to 334000000
+[    0.000000] Lowering vi maximum rate from 470000000 to 425000000
+[    0.000000] Lowering vde maximum rate from 600000000 to 520000000
+[    0.000000] Lowering mpe maximum rate from 600000000 to 520000000
+[    0.000000] Lowering 2d maximum rate from 600000000 to 520000000
+[    0.000000] Lowering epp maximum rate from 600000000 to 520000000
+[    0.000000] Lowering 3d maximum rate from 600000000 to 520000000
+[    0.000000] Lowering 3d2 maximum rate from 600000000 to 520000000
+[    0.000000] Lowering se maximum rate from 625000000 to 520000000
+[    0.000000] Lowering host1x maximum rate from 300000000 to 267000000
+[    0.000000] Lowering cbus maximum rate from 700000000 to 520000000
+[    0.000000] Lowering pll_c maximum rate from 1400000000 to 1066000000
+[    0.000000] Lowering ndflash maximum rate from 240000000 to 200000000
+[    0.000000] Lowering sbc1 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering sbc2 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering sbc3 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering sbc4 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering sbc5 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering sbc6 maximum rate from 160000000 to 100000000
+[    0.000000] Lowering dsia maximum rate from 500000000 to 432500000
+[    0.000000] Lowering dsib maximum rate from 500000000 to 432500000
+[    0.000000] tegra3_dvfs: cold offset 50000000 is too high for regular dvfs limit 1000000
+[    0.000000] tegra3_dvfs: cold offset 50000000 is too high for regular dvfs limit 1000000
+[    0.000000] tegra3_dvfs: cold offset 50000000 is too high for regular dvfs limit 1000000
+[    0.000000] tegra3_dvfs: cold offset 50000000 is too high for regular dvfs limit 1000000
+[    0.000000] tegra dvfs: VDD_CPU nominal 1212mV, scaling enabled
+[    0.000000] tegra dvfs: VDD_CORE nominal 1300mV, scaling enabled
+[    0.000000] L310 cache controller enabled
+[    0.000000] l2x0: 8 ways, CACHE_ID 0x410000c7, AUX_CTRL 0x7e080001, Cache size: 1048576 B
+[    0.000000] PERCPU: Embedded 8 pages/cpu @c1711000 s11296 r8192 d13280 u32768
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 254468
+[    0.000000] Kernel command line: tegraid=30.1.3.0.0 mem=1022M@2048M commchip_id=0 androidboot.serialno=015d483b6360021b androidboot.commchip_id=0 video=tegrafb no_console_suspend=1 console=ttyS0,115200n8 debug_uartport=lsport,3 usbcore.old_scheme_first=1 lp0_vec=8192@0xbddf9000 tegra_fbmem=8302080@0xacc23000 core_edp_mv=1300 audio_codec=wm8903 board_info=c5b:b01:4:43:3 tegraboot=sdmmc gpt gpt_sector=15073279 android.kerneltype=normal
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 1003MB = 1003MB total
+[    0.000000] Memory: 994232k/994232k available, 52296k reserved, 240632K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     DMA     : 0xff000000 - 0xffe00000   (  14 MB)
+[    0.000000]     vmalloc : 0xf0800000 - 0xf8000000   ( 120 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc09d8834   (10051 kB)
+[    0.000000]       .init : 0xc09d9000 - 0xc0a35c20   ( 372 kB)
+[    0.000000]       .data : 0xc0a36000 - 0xc0af2a34   ( 755 kB)
+[    0.000000]        .bss : 0xc0af2a58 - 0xc0c736d0   (1540 kB)
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:800
+[    0.000000] sched_clock: 32 bits at 1000kHz, resolution 1000ns, wraps every 4294967ms
+[    0.000244] Calibrating delay loop... 996.14 BogoMIPS (lpj=4980736)
+[    0.040083] pid_max: default: 32768 minimum: 301
+[    0.040287] Mount-cache hash table entries: 512
+[    0.041059] Initializing cgroup subsys debug
+[    0.041073] Initializing cgroup subsys cpuacct
+[    0.041127] Initializing cgroup subsys freezer
+[    0.041161] CPU: Testing write buffer coherency: ok
+[    0.041215] ftrace: allocating 27159 entries in 80 pages
+[    0.063520] hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+[    0.065019] CPU1: Booted secondary processor
+[    0.065739] CPU2: Booted secondary processor
+[    0.066423] CPU3: Booted secondary processor
+[    0.066574] Brought up 4 CPUs
+[    0.066586] SMP: Total of 4 processors activated (3984.58 BogoMIPS).
+[    0.070512] print_constraints: dummy: 
+[    0.070733] NET: Registered protocol family 16
+[    0.071648] host1x bus init
+[    0.071719] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.203483] cardhu_edp_init: CPU regulator 10000 mA
+[    0.203526] Selecting UARTD as the debug console
+[    0.203541] The debug console clock name is uartd_dbg
+[    0.203874] serial8250.0: ttyS0 at MMIO 0x70006300 (irq = 122) is a Tegra
+[    0.796403] console [ttyS0] enabled
+[    0.824724] ram_console: got buffer at beb00000, size 100000
+[    0.830510] ram_console: uncorrectable error in header
+[    0.835657] ram_console: no valid data in buffer (sig = 0xffffffff)
+[    0.852370] console [ram-1] enabled
+[    0.856165] Registering the core regulator
+[    0.860934] Clear bootloader IO dpd settings
+[    0.865291] Registering gpio keys
+[    0.904009] DDR Strap Pin AD4: 0
+[    0.907324] DDR Strap Pin AD5: 0
+[    0.910678] Init DFS table for Samsung DDR
+[    0.915164] tegra: validated EMC DFS table
+[    0.919339] hw-breakpoint: found 6 breakpoint and 1 watchpoint registers.
+[    0.926264] hw-breakpoint: 1 breakpoint(s) reserved for watchpoint single-step.
+[    0.933716] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.940651] tegra_iovmm_register: added iovmm-smmu
+[    0.952901] bio: create slab <bio-0> at 0
+[    0.957904] vgaarb: loaded
+[    0.960774] i2c-core: driver [tps6591x] using legacy suspend method
+[    0.967179] i2c-core: driver [tps6591x] using legacy resume method
+[    0.973515] i2c-core: driver [ricoh583] using legacy suspend method
+[    0.979906] i2c-core: driver [ricoh583] using legacy resume method
+[    0.986464] SCSI subsystem initialized
+[    0.990938] usbcore: registered new interface driver usbfs
+[    0.996586] usbcore: registered new interface driver hub
+[    1.002118] usbcore: registered new device driver usb
+[    1.007340] tegra-otg tegra-otg: otg transceiver registered
+[    1.013684] tps6591x 4-002d: VERNUM is 02
+[    1.019110] print_constraints: tps6591x_VIO: 1500 <--> 3300 mV at 1800 mV normal standby
+[    1.028639] print_constraints: tps6591x_VDD_1: 600 <--> 1500 mV at 1200 mV normal standby
+[    1.037731] print_constraints: tps6591x_VDD_2: 600 <--> 1500 mV at 1500 mV normal standby
+[    1.047332] print_constraints: tps6591x_VDDCTRL: 600 <--> 1400 mV at 1025 mV normal standby
+[    1.056324] print_constraints: tps6591x_LDO_1: 1000 <--> 3300 mV at 1050 mV normal standby
+[    1.064738] set_supply: tps6591x_LDO_1: supplied by tps6591x_VDD_2
+[    1.071834] print_constraints: tps6591x_LDO_2: 1050 mV normal standby
+[    1.078426] set_supply: tps6591x_LDO_2: supplied by tps6591x_VDD_2
+[    1.085102] print_constraints: tps6591x_LDO_3: 1000 <--> 3300 mV at 1000 mV normal standby
+[    1.094009] print_constraints: tps6591x_LDO_4: 1000 <--> 3300 mV at 1200 mV normal standby
+[    1.102766] print_constraints: tps6591x_LDO_5: 1000 <--> 3300 mV at 1000 mV normal standby
+[    1.111774] print_constraints: tps6591x_LDO_6: 1200 mV normal standby
+[    1.118307] set_supply: tps6591x_LDO_6: supplied by tps6591x_VIO
+[    1.125528] print_constraints: tps6591x_LDO_7: 1200 mV normal standby
+[    1.132045] set_supply: tps6591x_LDO_7: supplied by tps6591x_VIO
+[    1.139003] print_constraints: tps6591x_LDO_8: 1000 <--> 3300 mV at 1000 mV normal standby
+[    1.147357] set_supply: tps6591x_LDO_8: supplied by tps6591x_VIO
+[    1.155328] print_constraints: tps62361: 500 <--> 1770 mV at 1300 mV normal standby
+[    1.164295] Advanced Linux Sound Architecture Driver Version 1.0.24.
+[    1.171123] Bluetooth: Core ver 2.16
+[    1.174883] NET: Registered protocol family 31
+[    1.179392] Bluetooth: HCI device and connection manager initialized
+[    1.185884] Bluetooth: HCI socket layer initialized
+[    1.190828] Bluetooth: L2CAP socket layer initialized
+[    1.195982] Bluetooth: SCO socket layer initialized
+[    1.201073] NFC: NFC Core ver 0.1
+[    1.204503] NET: Registered protocol family 39
+[    1.209853] print_constraints: fixed_reg_en_5v_cp: 5000 mV normal standby
+[    1.217273] print_constraints: fixed_reg_en_5v0: 5000 mV normal standby
+[    1.224766] print_constraints: fixed_reg_en_ddr: 1500 mV normal standby
+[    1.231994] print_constraints: fixed_reg_en_3v3_sys: 3300 mV normal standby
+[    1.239470] print_constraints: fixed_reg_en_3v3_modem: 3300 mV normal standby
+[    1.246943] print_constraints: fixed_reg_en_vdd_pnl1: 3300 mV normal standby
+[    1.254078] set_supply: fixed_reg_en_vdd_pnl1: supplied by fixed_reg_en_3v3_sys
+[    1.261739] print_constraints: fixed_reg_cam3_ldo_en: 3300 mV normal standby
+[    1.268871] set_supply: fixed_reg_cam3_ldo_en: supplied by fixed_reg_en_3v3_sys
+[    1.276532] print_constraints: fixed_reg_en_vdd_com: 3300 mV normal standby
+[    1.283641] set_supply: fixed_reg_en_vdd_com: supplied by fixed_reg_en_3v3_sys
+[    1.291157] print_constraints: fixed_reg_en_3v3_fuse: 3300 mV normal standby
+[    1.298352] set_supply: fixed_reg_en_3v3_fuse: supplied by fixed_reg_en_3v3_sys
+[    1.306010] print_constraints: fixed_reg_en_3v3_emmc: 3300 mV normal standby
+[    1.313129] set_supply: fixed_reg_en_3v3_emmc: supplied by fixed_reg_en_3v3_sys
+[    1.320814] print_constraints: fixed_reg_en_vdd_sdmmc1: 3300 mV normal standby
+[    1.328183] set_supply: fixed_reg_en_vdd_sdmmc1: supplied by fixed_reg_en_3v3_sys
+[    1.335964] print_constraints: fixed_reg_en_3v3_pex_hvdd: 3300 mV normal standby
+[    1.343506] set_supply: fixed_reg_en_3v3_pex_hvdd: supplied by fixed_reg_en_3v3_sys
+[    1.351506] print_constraints: fixed_reg_en_1v8_cam: 1800 mV normal standby
+[    1.358558] set_supply: fixed_reg_en_1v8_cam: supplied by tps6591x_VIO
+[    1.365482] print_constraints: fixed_reg_en_vdd_bl: 5000 mV normal standby
+[    1.372620] print_constraints: fixed_reg_en_vdd_bl2: 5000 mV normal standby
+[    1.379948] print_constraints: fixed_reg_en_usb1_vbus_oc: 5000 mV normal standby
+[    1.387495] set_supply: fixed_reg_en_usb1_vbus_oc: supplied by fixed_reg_en_5v0
+[    1.395111] print_constraints: fixed_reg_en_usb3_vbus_oc: 5000 mV normal standby
+[    1.402643] set_supply: fixed_reg_en_usb3_vbus_oc: supplied by fixed_reg_en_5v0
+[    1.410331] print_constraints: fixed_reg_cam1_ldo_en: 2800 mV normal standby
+[    1.417469] set_supply: fixed_reg_cam1_ldo_en: supplied by fixed_reg_en_3v3_sys
+[    1.425174] print_constraints: fixed_reg_cam2_ldo_en: 2800 mV normal standby
+[    1.432297] set_supply: fixed_reg_cam2_ldo_en: supplied by fixed_reg_en_3v3_sys
+[    1.439978] print_constraints: fixed_reg_en_vddio_vid_oc: 5000 mV normal standby
+[    1.447522] set_supply: fixed_reg_en_vddio_vid_oc: supplied by fixed_reg_en_5v0
+[    1.455589] tegra: started io power detection dynamic control
+[    1.461466] tegra: NO_IO_POWER setting 0x1200
+[    1.465904] Switching to clocksource timer_us
+[    1.473501] Switched to NOHz mode on CPU #0
+[    1.475053] Switched to NOHz mode on CPU #1
+[    1.475769] Switched to NOHz mode on CPU #2
+[    1.476452] Switched to NOHz mode on CPU #3
+[    1.500610] nvmap_page_pool_init: nvmap uc page pool size=31069 pages
+[    1.529173] nvmap_page_pool_init: nvmap pool = uc, highmem=31069, pool_size=31069,totalram=248558, freeram=216598, totalhigh=60158, freehigh=29018
+[    1.629775] nvmap_page_pool_init: nvmap wc page pool size=31069 pages
+[    1.660792] nvmap_page_pool_init: nvmap pool = wc, highmem=28965, pool_size=31069,totalram=248558, freeram=185503, totalhigh=60158, freehigh=0
+[    1.761939] nvmap_page_pool_init: nvmap iwb page pool size=31069 pages
+[    1.822671] nvmap_page_pool_init: nvmap pool = iwb, highmem=0, pool_size=31069,totalram=248558, freeram=154348, totalhigh=60158, freehigh=0
+[    1.935883] tegra-nvmap tegra-nvmap: created carveout iram (255KiB)
+[    1.943551] NET: Registered protocol family 2
+[    1.948156] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    1.955912] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    1.964971] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    1.972519] TCP: Hash tables configured (established 131072 bind 65536)
+[    1.979258] TCP reno registered
+[    1.982481] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.988485] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    1.995234] NET: Registered protocol family 1
+[    2.000043] RPC: Registered named UNIX socket transport module.
+[    2.006112] RPC: Registered udp transport module.
+[    2.010893] RPC: Registered tcp transport module.
+[    2.015719] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    2.022235] PCI: CLS 0 bytes, default 32
+[    2.026434] Unpacking initramfs...
+[    2.041693] host1x host1x: initialized
+[    2.046687] PMU: registered new PMU device of type 0
+[    2.054062] tegra3_throttle : init done
+[    2.059331] Tegra auto-hotplug initialized: disabled
+[    2.065259] cpu-tegra: init EDP limit: 1550 MHz
+[    2.087559] highmem bounce pool size: 64 pages
+[    2.092249] ashmem: initialized
+[    2.096539] NTFS driver 2.1.30 [Flags: R/O].
+[    2.101032] fuse init (API version 7.17)
+[    2.105145] Registering char device tf_driver (122:0)
+[    2.110388] TF : INFO 00000001 00:00:00.000 ------ ------  --------------- Booting... (t=00:00:05.111) TFNXBF01.16p1.38941     /Trusted-Logic
+[    2.124234] io scheduler noop registered (default)
+[    2.130052] mpe mpe: initialized
+[    2.134365] gr3d gr3d: initialized
+[    2.138617] gr2d gr2d: initialized
+[    2.142328] isp isp: initialized
+[    2.145741] vi vi: initialized
+[    2.149571] nvhdcp: using "always on" policy.
+[    2.158234] tegradc tegradc.0: probed
+[    2.162229] tegradc tegradc.0: probed
+[    2.175904] tegra_uart.0: ttyHS0 at MMIO 0x70006000 (irq = 68) is a TEGRA_UART
+[    2.250524] nvhdcp: Error: nvhdcp failure - giving up
+[    2.280443] Registered UART port ttyHS0
+[    2.284425] tegra_uart.1: ttyHS1 at MMIO 0x70006040 (irq = 69) is a TEGRA_UART
+[    2.450445] Registered UART port ttyHS1
+[    2.454418] tegra_uart.2: ttyHS2 at MMIO 0x70006200 (irq = 78) is a TEGRA_UART
+[    2.600441] Registered UART port ttyHS2
+[    2.604426] tegra_uart.4: ttyHS4 at MMIO 0x70006400 (irq = 123) is a TEGRA_UART
+[    2.760445] Registered UART port ttyHS4
+[    2.764432] Initialized tegra uart driver
+[    2.771077] loop: module loaded
+[    2.774420] i2c-core: driver [apds9802als] using legacy suspend method
+[    2.781025] i2c-core: driver [apds9802als] using legacy resume method
+[    2.787785] nct1008_nct72 4-004c: success in enabling rail vdd_nct1008
+[    2.796842] nct1008_nct72 4-004c: nct1008_probe: initialized
+[    2.804716] i2c-core: driver [nct1008_nct72] using legacy suspend method
+[    2.811554] i2c-core: driver [nct1008_nct72] using legacy resume method
+[    3.820667] tegra_cec tegra_cec: probed
+[    3.824807] bluedroid_pm_probe: regulator vdd_bt_3v3 not available
+[    3.831133] bluedroid_pm_probe: regulator vddio_bt_1v8 not available
+[    3.837690] bluedroid_pm_probe : found host_wake irq
+[    3.842959] Loading pn544 driver
+[    3.846490] PPP generic driver version 2.4.2
+[    3.851004] PPP Deflate Compression module registered
+[    3.856117] PPP BSD Compression module registered
+[    3.861593] PPP MPPE Compression module registered
+[    3.866447] NET: Registered protocol family 24
+[    3.871404] tun: Universal TUN/TAP device driver, 1.6
+[    3.876571] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    3.883003] usbcore: registered new interface driver asix
+[    3.888552] usbcore: registered new interface driver cdc_ether
+[    3.894505] usbcore: registered new interface driver smsc95xx
+[    3.900401] usbcore: registered new interface driver cdc_subset
+[    3.906403] cdc_ncm: 04-Aug-2011
+[    3.909793] usbcore: registered new interface driver cdc_ncm
+[    3.915532] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    3.922236] tegra USB phy - inst[1] platform info:
+[    3.927086] port_otg: no
+[    3.929679] has_hostpc: yes
+[    3.932598] phy_interface: USB_PHY_INTF_UTMI
+[    3.936922] op_mode: TEGRA_USB_OPMODE_HOST
+[    3.941082] vbus_gpio: -1
+[    3.943816] vbus_reg: NULL
+[    3.946582] hot_plug: disabled
+[    3.949693] remote_wakeup: enabled
+[    3.957241] Timed out waiting for lock bit on pll pll_u
+[    3.966147] tegra-ehci tegra-ehci.1: Tegra EHCI Host Controller
+[    3.972476] tegra-ehci tegra-ehci.1: new USB bus registered, assigned bus number 1
+[    4.000471] tegra-ehci tegra-ehci.1: irq 53, io mem 0x7d004000
+[    4.020452] tegra-ehci tegra-ehci.1: USB 2.0 started, EHCI 1.00
+[    4.026512] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.033429] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.040715] usb usb1: Product: Tegra EHCI Host Controller
+[    4.046225] usb usb1: Manufacturer: Linux 3.1.10-g7b239160 ehci_hcd
+[    4.052553] usb usb1: SerialNumber: tegra-ehci.1
+[    4.057585] hub 1-0:1.0: USB hub found
+[    4.061421] hub 1-0:1.0: 1 port detected
+[    4.065641] tegra USB phy - inst[2] platform info:
+[    4.070562] port_otg: no
+[    4.073152] has_hostpc: yes
+[    4.076000] phy_interface: USB_PHY_INTF_UTMI
+[    4.080381] op_mode: TEGRA_USB_OPMODE_HOST
+[    4.084547] vbus_gpio: -1
+[    4.087225] vbus_reg: vdd_vbus_typea_usb
+[    4.091267] hot_plug: enabled
+[    4.094291] remote_wakeup: enabled
+[    4.098983] tegra-ehci tegra-ehci.2: Tegra EHCI Host Controller
+[    4.105057] tegra-ehci tegra-ehci.2: new USB bus registered, assigned bus number 2
+[    4.140468] tegra-ehci tegra-ehci.2: irq 129, io mem 0x7d008000
+[    4.160493] tegra-ehci tegra-ehci.2: USB 2.0 started, EHCI 1.00
+[    4.166515] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    4.173432] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    4.180774] usb usb2: Product: Tegra EHCI Host Controller
+[    4.186229] usb usb2: Manufacturer: Linux 3.1.10-g7b239160 ehci_hcd
+[    4.192613] usb usb2: SerialNumber: tegra-ehci.2
+[    4.197576] hub 2-0:1.0: USB hub found
+[    4.201412] hub 2-0:1.0: 1 port detected
+[    4.205868] usbcore: registered new interface driver cdc_acm
+[    4.211605] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    4.219758] usbcore: registered new interface driver cdc_wdm
+[    4.225482] Initializing USB Mass Storage driver...
+[    4.230570] usbcore: registered new interface driver usb-storage
+[    4.236627] USB Mass Storage support registered.
+[    4.241446] usbcore: registered new interface driver libusual
+[    4.247346] usbcore: registered new interface driver usbserial
+[    4.253305] usbserial: USB Serial Driver core
+[    4.257752] USB Serial support registered for GSM modem (1-port)
+[    4.264049] usbcore: registered new interface driver option
+[    4.269680] option: v0.7.2:USB Driver for GSM modems
+[    4.274805] USB Serial support registered for pl2303
+[    4.279889] usbcore: registered new interface driver pl2303
+[    4.285589] pl2303: Prolific PL2303 USB to serial adaptor driver
+[    4.291660] Nvidia Tegra High-Speed USB SOC 					Device Controller driver (Apr 30, 2012)
+[    4.299930] tegra USB phy - inst[0] platform info:
+[    4.304828] port_otg: yes
+[    4.307568] has_hostpc: yes
+[    4.310432] phy_interface: USB_PHY_INTF_UTMI
+[    4.314758] op_mode: TEGRA_USB_OPMODE_DEVICE
+[    4.319153] vbus_pmu_irq: 0
+[    4.322016] vbus_gpio: -1
+[    4.324694] charging: disabled
+[    4.327803] remote_wakeup: disabled
+[    4.333777] tegra-udc tegra-udc.0: usb_bat_chg regulator not registered: USB charging will not be enabled
+[    4.344474] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    4.351483] android_usb gadget: Number of LUNs=1
+[    4.356162]  lun0: LUN: removable file: (no medium)
+[    4.361368] android_usb gadget: android_usb ready
+[    4.366131] tegra-udc: bind to driver android_usb
+[    4.371123] usbcore: registered new interface driver xpad
+[    4.376650] in function ____rmi_bus_init____  
+[    4.380467] usb 1-1: new high speed USB device number 2 using tegra-ehci
+[    4.388042] rmi_bus_init: successfully registered RMI bus.
+[    4.393707] rmi_spi_init: registering synaptics spi driver (ref=124)
+[    4.400116]              driver.owner        =  0x0
+[    4.405119]              driver.name         =  rmi_spi
+[    4.410399]              id_table[0].name    =  rmi
+[    4.415421]              id_table[1].name    =  rmi_spi
+[    4.420737]              probe function ptr  =  0xc06b7720
+[    4.426326] in function ____rmi_register_driver____  
+[    4.431546] usb 1-1: New USB device found, idVendor=0424, idProduct=9e00
+[    4.431561] in function ____rmi_get_function_handler____  
+[    4.431570] in function ____rmi_get_function_handler____  
+[    4.431578] in function ____rmi_get_function_handler____  
+[    4.431585] in function ____rmi_get_function_handler____  
+[    4.431591] in function ____rmi_get_function_handler____  
+[    4.431598] in function ____rmi_get_function_handler____  
+[    4.434508] rtc_tps6591x rtc_tps6591x.0: RTC Time : 1/1/2000 0:0:0
+[    4.436579] tps6591x 4-002d: 
+[    4.436584]  getting alarm time::
+[    4.436593] rtc_tps6591x rtc_tps6591x.0: RTC Time : 1/1/2000 0:0:0
+[    4.436836] using rtc device, rtc_tps6591x, for alarms
+[    4.436878] rtc_tps6591x rtc_tps6591x.0: rtc core: registered rtc_tps6591x as rtc0
+[    4.441679] rtc_tps6591x rtc_tps6591x.0: RTC Time : 1/1/2000 0:0:0
+[    4.509584] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    4.519395] smsc95xx v1.0.4
+[    4.530623] i2c /dev entries driver
+[    4.534616] Linux video capture interface: v2.00
+[    4.539386] usbcore: registered new interface driver uvcvideo
+[    4.545313] USB Video Class driver (1.1.1)
+[    4.549589] trpc_sema_init: registered misc dev 10:50
+[    4.554872] trpc_node_register: Adding 'local' to node list
+[    4.561662] nvavp nvavp: allocated IOVM at ff00000 for AVP os
+[    4.567899] tegra_camera tegra_camera: tegra_camera_probe
+[    4.573906] ar0832_init: ++
+[    4.576853] ov5650 sensor driver loading
+[    4.581159] ov9726 sensor driver loading
+[    4.585227] ov2710 sensor driver loading
+[    4.589574] i2c-core: driver [bq20z75-battery] using legacy suspend method
+[    4.596625] i2c-core: driver [bq20z75-battery] using legacy resume method
+[    4.603924] i2c-core: driver [max17048] using legacy suspend method
+[    4.610294] i2c-core: driver [max17048] using legacy resume method
+[    4.617275] device-mapper: uevent: version 1.0.3
+[    4.622185] device-mapper: ioctl: 4.21.0-ioctl (2011-07-06) initialised: dm-devel@redhat.com
+[    4.630805] Bluetooth: HCI UART driver ver 2.2
+[    4.635309] Bluetooth: HCI H4 protocol initialized
+[    4.640212] Bluetooth: HCILL protocol initialized
+[    4.645825] cpuidle: using governor ladder
+[    4.650696] cpuidle: using governor menu
+[    4.654842] sdhci: Secure Digital Host Controller Interface driver
+[    4.661146] sdhci: Copyright(c) Pierre Ossman
+[    4.665663] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.672688] mmc0: Invalid maximum block size, assuming 512 bytes
+[    4.678886] mmc0: no vmmc regulator found
+[    4.683716] smsc95xx 1-1:1.0: eth0: register 'smsc95xx' at usb-tegra-ehci.1-1, smsc95xx USB 2.0 Ethernet, 46:46:0a:a1:cc:2d
+[    4.695052] Registered led device: mmc0::
+[    4.702488] mmc0: SDHCI controller on sdhci-tegra.3 [sdhci-tegra.3] using ADMA
+[    4.710172] sdhci-tegra sdhci-tegra.2: vddio_sd_slot regulator not found: -19. Assuming vddio_sd_slot is not required.
+[    4.722100] mmc1: Invalid maximum block size, assuming 512 bytes
+[    4.728246] mmc1: no vmmc regulator found
+[    4.733399] Registered led device: mmc1::
+[    4.739622] mmc1: SDHCI controller on sdhci-tegra.2 [sdhci-tegra.2] using ADMA
+[    4.751720] mmc2: Invalid maximum block size, assuming 512 bytes
+[    4.757821] mmc2: no vmmc regulator found
+[    4.766403] Registered led device: mmc2::
+[    4.777882] mmc2: SDHCI controller on sdhci-tegra.0 [sdhci-tegra.0] using ADMA
+[    4.787415] Registered led device: fan
+[    4.799871] tegra-se tegra-se: tegra_se_probe: complete
+[    4.805466] usbcore: registered new interface driver usbhid
+[    4.811358] usbhid: USB HID core driver
+[    4.815534] logger: created 256K log 'log_main'
+[    4.820241] logger: created 256K log 'log_events'
+[    4.825097] logger: created 256K log 'log_radio'
+[    4.829890] logger: created 256K log 'log_system'
+[    4.834879] i2c-core: driver [LTR_558ALS] using legacy suspend method
+[    4.841466] i2c-core: driver [LTR_558ALS] using legacy resume method
+[    4.861761] mmc0: new high speed DDR MMC card at address 0001
+[    4.867758] mmcblk mmc0:0001: Card claimed for testing.
+[    4.873347] mmcblk0: mmc0:0001 MMC08G 7.18 GiB 
+[    4.878173] mmcblk0boot0: mmc0:0001 MMC08G partition 1 2.00 MiB
+[    4.884350] mmcblk0boot1: mmc0:0001 MMC08G partition 2 2.00 MiB
+[    4.892488] Primary GPT is invalid, using alternate GPT.
+[    4.897900]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9
+[    4.904949]  mmcblk0boot1: unknown partition table
+[    4.911177]  mmcblk0boot0: unknown partition table
+[    5.350457] HDMI status: Codec=3 Pin=5 Presence_Detect=0 ELD_Valid=0
+[    5.390943] usbcore: registered new interface driver snd-usb-audio
+[    5.399048] tegra-snd-wm8903 tegra-snd-wm8903.0: We are cardhu and wm8903
+[    5.408486] asoc: dit-hifi <-> tegra30-spdif mapping ok
+[    5.417919] asoc: dit-hifi <-> tegra30-i2s.3 mapping ok
+[    5.423299] tegra-snd-wm8903 tegra-snd-wm8903.0: Failed to add route HPOUTR->Headphone Jack
+[    5.432363] ALSA device list:
+[    5.435392]   #0: HDA NVIDIA Tegra at 0x70038000 irq 113
+[    5.440775]   #1: tegra-wm8903
+[    5.444144] oprofile: using arm/armv7-ca9
+[    5.448333] GACT probability NOT on
+[    5.451904] Mirror/redirect action on
+[    5.455683] u32 classifier
+[    5.458441]     Actions configured
+[    5.461910] Netfilter messages via NETLINK v0.30.
+[    5.466792] nf_conntrack version 0.5.0 (15534 buckets, 62136 max)
+[    5.473286] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    5.480360] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    5.487662] xt_time: kernel timezone is -0000
+[    5.492304] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    5.497862] arp_tables: (C) 2002 David S. Miller
+[    5.502611] TCP cubic registered
+[    5.506017] NET: Registered protocol family 10
+[    5.516885] Mobile IPv6
+[    5.519419] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    5.525108] IPv6 over IPv4 tunneling driver
+[    5.530203] NET: Registered protocol family 17
+[    5.534806] NET: Registered protocol family 15
+[    5.539433] Bluetooth: RFCOMM TTY layer initialized
+[    5.544395] Bluetooth: RFCOMM socket layer initialized
+[    5.549646] Bluetooth: RFCOMM ver 1.11
+[    5.553464] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    5.558887] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    5.565118] NET: Registered protocol family 37
+[    5.569683] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    5.577537] Registering SWP/SWPB emulation handler
+[    5.592806] Disabling clocks left on by bootloader:
+[    5.597753]    dsi2-fixed
+[    5.600456]    dsi1-fixed
+[    5.603205]    uartd
+[    5.605469]    fuse_burn
+[    5.608066]    cclk_lp
+[    5.610496]    pll_x_out0
+[    5.613179]    pll_p_out2
+[    5.615915]    pll_c_out1
+[    5.618595]    pll_m_out1
+[    5.621404] CPU rate: 1000 MHz
+[    5.624792] DVFS: Got RTC device name:rtc0
+[    5.631395] rtc_tps6591x rtc_tps6591x.0: RTC Time : 1/1/2000 0:0:1
+[    5.637694] tegra_dvfs: vdd_cpu: stats above 1237 mV will be squashed
+[    5.644962] tegra dvfs: tegra sysfs cap interface is initialized
+[    5.651267] tegra_actmon.emc: Completed initialization (0)
+[    5.657046] tegra_actmon.avp: Completed initialization (0)
+[    5.663900] regulator_init_complete: fixed_reg_en_vdd_bl2: disabling
+[    5.670370] regulator_init_complete: fixed_reg_en_vdd_bl: disabling
+[    5.676768] regulator_init_complete: fixed_reg_en_vdd_sdmmc1: disabling
+[    5.683508] regulator_init_complete: fixed_reg_en_vdd_pnl1: disabling
+[    5.690101] regulator_init_complete: tps6591x_VDD_2: disabling
+[    5.696615] input: gpio-keys as /devices/platform/gpio-keys.0/input/input0
+[    5.706151] rtc_tps6591x rtc_tps6591x.0: RTC Time : 1/1/2000 0:0:1
+[    5.712464] rtc_tps6591x rtc_tps6591x.0: setting system clock to 2000-01-01 00:00:01 UTC (946684801)
+[    5.726162] init (1): /proc/1/oom_adj is deprecated, please use /proc/1/oom_score_adj instead.
+[    5.796276] init: could not open /dev/keychord
+[    6.388722] EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: (null)
+[    6.407578] EXT4-fs (mmcblk0p3): re-mounted. Opts: (null)
+[    6.430952] EXT4-fs (mmcblk0p4): recovery complete
+[    6.436728] EXT4-fs (mmcblk0p4): mounted filesystem with writeback data mode. Opts: journal_async_commit,data=writeback,nodelalloc,errors=panic
+[    6.616663] EXT4-fs (mmcblk0p9): recovery complete
+[    6.622536] EXT4-fs (mmcblk0p9): mounted filesystem with writeback data mode. Opts: journal_async_commit,data=writeback,nodelalloc,errors=panic
+[    6.666948] init: cannot find '/system/bin/rild', disabling 'ril-daemon'
+[    6.755192] i2c-core: driver [mpu3050] using legacy suspend method
+[    6.761554] i2c-core: driver [mpu3050] using legacy resume method
+[    6.767744] mpu_init: Probe name mpu3050
+[    6.794510] kxtf9_mod_init: Probe name kxtf9_mod
+[    6.809338] ak8975_mod_init: Probe name ak8975_mod
+[    6.834249] TF : INFO 00000002 23:59:57.501 P-0005 T-0014 TL OTF --------- SDrvCreate
+[    6.842554] TF : INFO 00000003 23:59:57.510 P-000D T-001E NV RSA --------- SDrvCreate
+[    6.855915] TF : INFO 00000004 23:59:57.523 ------ ------  --------------- Booted
+[    7.100760] Tegra auto-hotplug enabled
+[    7.104848] Tegra auto-hotplug disabled
+[    7.221582] cfg80211: Calling CRDA to update world regulatory domain
+[    7.402294] android_usb: already disabled
+[    7.408569] warning: `adbd' uses 32-bit capabilities (legacy support in use)
+[    7.416012] adb_open(adbd)
+[    7.418793] mtp_bind_config
+[    7.421728] adb_bind_config
+[    7.556772] ## wifi_probe
+[    7.559516] wifi_set_power = 1
+[    7.863033] wifi_set_carddetect = 1
+[    7.867077] 
+[    7.867083] Dongle Host Driver, version 5.90.195.104
+[    7.867086] Compiled in drivers/net/wireless/bcmdhd on Feb  6 2014 at 15:27:14
+[    7.927728] mmc1: new high speed SDIO card at address 0001
+[    7.936208] bcmdhd: fw_path: /system/vendor/firmware/bcm4330/fw_bcmdhd.bin nvram_path: /system/etc/nvram_4330.txt
+[    7.952560] F1 signature read @0x18000000=0x16044330
+[    7.967169] DHD: dongle ram size is set to 294912(orig 294912)
+[    7.978615] wl_create_event_handler thr:10c started
+[    7.988314] p2p0: P2P Interface Registered
+[    7.994320] dhd_attach thr:116 started
+[    7.998199] dhd_attach thr:117 started
+[    8.002219] dhd_attach thr:118 started
+[    8.006203] dhd_attach thr:119 started
+[    8.011746] Broadcom Dongle Host Driver: register interface [wlan0] MAC: 00:90:4c:11:22:33
+[    8.024517] wifi_set_power = 0
+[    8.327944] =========== WLAN placed in RESET ========
+[    8.398608] TF : INFO 00000005 23:59:59.066 P-0028 T-002C HDCP SERVICE --- >> Cr <<
+[    8.408297] TF : INFO 00000006 23:59:59.076 P-0028 T-002C HDCP SERVICE --- >> SRVXOpenClientSession
+[    8.634143] nvavp nvavp: using SMMU at ff00000 to load AVP kernel
+[    8.666465] nvavp nvavp: read firmware from 'nvavp_os_0ff00000.bin' (15516 bytes)
+[    8.688088] nvavp nvavp: entry=00000094 control=00004a80 debug=00005280 size=15492
+[    8.695896] nvavp nvavp: AVP os at vaddr=f0e00000 paddr=ff00000 reset_addr=0ff00094
+[    8.719420] nvavp nvavp: read ucode firmware from 'nvavp_vid_ucode_alt.bin' (27176 bytes)
+[    8.861573] nvavp nvavp: using SMMU at ff00000 to load AVP kernel
+[    8.867963] nvavp nvavp: AVP os at vaddr=f0e00000 paddr=ff00000 reset_addr=0ff00094
+[   14.493853] nvavp nvavp: using SMMU at ff00000 to load AVP kernel
+[   14.503573] nvavp nvavp: AVP os at vaddr=f0e00000 paddr=ff00000 reset_addr=0ff00094
+[   14.596383] misc nvmap: nvmap_unpin_ids: mediaserver unpinning invalid handle e6055640
+[   15.057224] tegra_uart tegra_uart.2: Setting clk_src clk_m
+[   15.063576] tegra_uart tegra_uart.2: Setting clk_src clk_m
+[   15.071301] tegra_uart tegra_uart.2: Setting clk_src clk_m
+[   15.082394] tegra_uart tegra_uart.2: Setting clk_src pll_p
+[   15.379095] tegra_uart tegra_uart.2: Setting clk_src clk_m
+[   15.418583] tegra_uart tegra_uart.2: Setting clk_src pll_p
+[   15.435446] ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   15.537062] 
+[   15.537070] Dongle Host Driver, version 5.90.195.104
+[   15.537073] Compiled in drivers/net/wireless/bcmdhd on Feb  6 2014 at 15:27:14
+[   15.550969] wl_android_wifi_on in
+[   15.554339] wifi_set_power = 1
+[   15.632070] acc_open
+[   15.634367] acc_release
+[   15.858039] =========== WLAN going back to live  ========
+[   15.961821] dhdsdio_write_vars: Download, Upload and compare of NVRAM succeeded.
+[   16.113769] Firmware up: fw_path=/system/vendor/firmware/bcm4330/fw_bcmdhd.bin op_mode=4, Broadcom Dongle Host Driver mac=b8:5a:f7:80:b9:33
+[   16.140305] Firmware version = wl0: Jul 17 2013 12:16:33 version 5.90.195.89.10 FWID 01-f1d9a409
+[   16.163878] p2p0: p2p_dev_addr=ba:5a:f7:80:b9:33
+[   16.348206] rtc_tps6591x rtc_tps6591x.0: RTC Time : 7/25/2013 0:0:0
+[   16.405475] dhd_rx_frame: net device is NOT registered yet. drop packet
+[   16.413249] dhd_rx_frame: net device is NOT registered yet. drop packet
+[   16.514091] hdev hci0
+[   16.861705] B8:5A:F7:01:A2:04 -> B8:5A:F7:C0:FC:41
+[   16.866619] hci0 dst B8:5A:F7:C0:FC:41
+[   16.870464] hci0 dst B8:5A:F7:C0:FC:41
+[   16.874309] dbe3a800
+[   17.690148] nvavp nvavp: using SMMU at ff00000 to load AVP kernel
+[   17.696544] nvavp nvavp: AVP os at vaddr=f0e00000 paddr=ff00000 reset_addr=0ff00094
+[   17.813017] connect failed event=0 e->status 3 e->reason 0
+[   17.818704] CFG80211-ERROR) wl_bss_connect_done : Report connect result - connection failed
+[   17.831170] init: sys_prop: permission denied uid:1003  name:service.bootanim.exit
+[   22.000963] dbe3a800
+[   22.003228] hci0 conn dbe3a800 handle 0
+[   22.007242] hdev hci0
+[   26.810461] p2p0: no IPv6 routers present
+[   29.863210] wl_bss_connect_done succeeded with 7c:4f:b5:ac:e4:ad
+[   29.932789] wl_bss_connect_done succeeded with 7c:4f:b5:ac:e4:ad
+[   34.849844] qtaguid: iface_stat: stat_update() wlan0 not found
+[   34.856047] qtaguid: iface_stat: stat_update() wlan0 not found
+[   34.863530] qtaguid: iface_stat: stat_update() wlan0 not found
+[   34.869482] qtaguid: iface_stat: stat_update() wlan0 not found
+[   38.221577] rtc_tps6591x rtc_tps6591x.0: RTC Time : 2/27/2014 22:40:1
+[   46.060444] wlan0: no IPv6 routers present
+[   47.985913] TF : INFO 00000007 22:40:05.919 P-0001 T-0011 System --------- Mounting partition 0...
+[   48.004471] TF : INFO 00000008 22:40:05.938 P-0001 T-0011 System --------- File system mounted successfully in partition 0
